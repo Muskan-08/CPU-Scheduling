@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int n,t,p;
-	int burst_time[20],arv_time[20],pr[20],temp[20];
+	int burst_time[20],arv_time[20],pr[20],temp[20],prr[20];
 	cout<<"Enter the number of the process you want to add\t";
 	cin>>n;
 	cout<<"\nEnter the Burst time of the processes";
@@ -50,15 +50,14 @@ int main()
       {
           if(temp[i]==burst_time[j])
           {
-              p=pr[i];
-              pr[i]=pr[j];
-              pr[j]=p;
+            prr[j]=pr[i];
           }
       }
+      
   }
   cout<<"\n";
   for(int i=0;i<n;i++)
     {
-        cout<<pr[i]<<"\t";
+        cout<<prr[i]<<"\t";
     }
 }
