@@ -8,7 +8,6 @@ int main()
 [20],avg_tat,total,tt;
 	cout<<"Enter the number of the process you want to add\t";
 	cin>>n;
-	cout<<"\nEnter the Burst time of the processes";
 	for(int i=0;i<n;i++)
 	{
 	    cout<<"\nEnter the Process Name"<<"\t";
@@ -117,8 +116,8 @@ wt[0]=0;
         tt+=tat[i];
         cout<<"\n"<<prr[i]<<"\t\t"<<burst_time[i]<<"\t\t"<<wt[i]<<"\t\t"<<tat[i];
     }
- 
-    avg_tat=tt/n;     
+
+    avg_tat=tt/n;     //average turnaround time
    cout<<"\n\nAverage Waiting Time=\t"<<avg_wt;
     cout<<"\nAverage Turnaround Time=\t"<<avg_tat;
  
